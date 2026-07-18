@@ -1,4 +1,8 @@
-import os
+import telegram
+import sys
+
+print("Python:", sys.version)
+print("Telegram:", telegram.__version__)import os
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 
@@ -20,3 +24,8 @@ app.add_handler(CommandHandler("help", help_command))
 
 print("Bot is starting...")
 app.run_polling()
+
+
+
+
+
